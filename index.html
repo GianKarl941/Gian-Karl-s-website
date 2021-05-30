@@ -1,20 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <!--Meta tags-->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gian Karl</title>
+
+        <title>Gian Karl</title>
+
+        <!--CSS style tags-->
+        
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        .left {
+            /* background-color: #2196F3; */
+            padding: 10px;
+            float: left;
+            width: 25%; /* The width is 20%, by default */
+        }
+        .main {
+            /* background-color: #f1f1f1; */
+            padding: 20px;
+            float: left;
+            width: 50%; /* The width is 60%, by default */
+        }
+        .right {
+            /* background-color: #4CAF50; */
+            padding: 10px;
+            float: right;
+            width: 25%; /* The width is 20%, by default */
+        }
+        /* Use a media query to add a break point at 800px: */
+        @media screen and (max-width: 800px) {
+            .left, .main, .right {
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
         h1 {
             margin: 10px 50px;
             border: 10px solid #282828;
         }
-
         h2, h3 {
             margin: 10px 50px;
             border: 10px solid #282828;
         }
-
         p {
             margin: 10px 50px;
             border: 10px solid #282828; 
@@ -23,28 +55,44 @@
             margin: 10px 50px;
             border: 1px solid #928374;
         }
-
     </style>
 </head>
-<body bgcolor="#282828" link="83a598" alink="#fb4934" vlink="83a598">
+<body bgcolor="#282828" link="83a598" alink="#fb4934" vlink="83a598" style=>
     <font color="#fbf1c7" face="sans" size="4">
         <header>
             <h1 align="center">Gian Karl's Webpage</h1>
         <header>
 
-        <hr>
+            <hr> <!--Break line-->
         
         <main>
-            <h3 align="center">Introduction</h3>
-        
-            <img src="aoi_nabi.png" alt="aoi_nabi" align="center" style="width:24vw ;height:auto;">
-
-            <ul type="circle">
-                <li>I use Linux btw</li>
-                <li>I'm interested in technology and computer stuff</li>
-                <li>I love making games (specifically video games)</li>
-            </ul>
+            <div class="left">
+                <h3 align="center">Introduction</h3>
+                    <ul type="circle">
+                        <li>I use Linux btw</li>
+                        <li>I'm interested in technology and computer stuff</li>
+                        <li>I love making games (specifically video games)</li>
+                    </ul>
+            </div>
+            <div class="main">
+                <h3 align="center">Introduction</h3>
+                    <font align="center">
+                        <!-- <img src="aoi_nabi.png" alt="aoi_nabi" align="center" style="width:24vw ;height:auto;"> -->
+                        <p>
+                            I use Linux btw
+                            I'm interested in technology and computer stuff
+                            I love making games (specifically video games)
+                        </p>
+                    </font>
+            </div>
+            <div class="right">
+                <h3 align="center">Introduction</h3>
+                    <p>
+                        I use Linux btw
+                        I'm interested in technology and computer stuff
+                        I love making games (specifically video games)
+                    </p>
+            </div>
         </main>
-        
 </body>
 </html>
