@@ -1,88 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <!--Meta tags-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gian Karl</title>
-        <!--CSS style tags-->
-    <style>
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        body {
-            margin: 0 auto;
-            max-width: 960px;
-            border: 14px solid #b8bb26;
-            border-left: 14px solid #fb4934;
-            border-right: 14px solid #fb4934;
-            border-radius: 29px;
-        }
-        h1 {
-            margin: 7px 50px;
-            border: 7px solid #282828;
-        }
-        h2, h3 {
-            margin: 7px 50px;
-            border: 7px solid #282828;
-        }
-        p {
-            margin: 7px 50px;
-            border: 7px solid #282828; 
-        }
-        hr {
-            margin: 7px 50px;
-            border: 1px solid #928374;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+}
+.menu {
+  float: left;
+  width: 20%;
+  color: #ffffbd
+}
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  border-bottom: 1px solid #525252;
+}
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.right {
+  background-color: rgb(24, 24, 24);
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+}
+h1 {
+   color: #ffffbd;
+}
+h2, h3 {
+    color: #ffffbd;
+}
+p {
+    color: #ffffbd;
+}
+hr {
+    color: #ffffbd;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+</style>
 </head>
-<body bgcolor="#282828" link="83a598" alink="#fb4934" vlink="83a598" style=>
-    <font color="#fbf1c7" face="sans" size="4">
-        <header>
-            <font align="15vw">
-            <h1 align="center">Gian Karl's Webpage</h1>
-        <header>
-        <main>
-            <hr>  <!--Break line-->
-                <h2 align="center">🤚 Introduction 🤚</h2>
-                    <font align="center">
-                        <p><img src="aoi_nabi.png" alt="aoi_nabi" class="center" style="width:20vw;"></p>
-                    </font>
-                        <p>
-                            <ul>
-                                <li>I use Linux btw</li>
-                                <li>I'm interested in technology and computer stuff</li>
-                                <li>I love making games (specifically video games)</li>
-                            </ul>
-                        </p>
-            <hr>  <!--Break line-->
-                <font align="center">
-                    <h3 align="center">📃 Articles 📃</h3>
-                    <p>This is where i post about discussion and topics about anything that i want to put it here </p>
-                </font>
-                    <p>
-                        <ul>
-                            <li><a href="My_first_article.html">Why i think vim should be the main text editor for everyone</a></li>
-                        </ul>
-                    </p>
-            <hr>  <!--Break line-->
-                <font align="center">
-                    <h3 align="center">⚠ Website is still under construction ⚠</h3>
-                    <p>Please wait or else she will ground pound you</p>
-                        <p><img src="ame_pound.gif" style="width:9vw;" class="center"></p>
-                </font>
-        </main>
-    </font>
+<body style="font-family:'Courier New';" bgcolor="#282828" link="83a598" alink="#fb4934" vlink="83a598" >
+
+<div style="background-color:#3d3d3d;padding:15px;">
+  <h1>Goofy Ahh Website</h1>
+  <h3>This is purely in development, many changes to come</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><li><a href="My_first_article.html">Why Vim is Cool</a></li></div>
+    <div class="menuitem">bla bla</div>
+    <div class="menuitem">Bepp</div>
+    <div class="menuitem">Other stuff</div>
+  </div>
+
+  <div class="main">
+    <h2>About Me</h2>
+    <p>Currently adding some info from the other website.</p>
+    <!--Meta tags<img src="img_5terre.jpg" style="width:100%">-->
+  </div>
+
+  <div class="right">
+    <h2>Current Stuff workin'</h2>
+    <p>Nothing atm...</p>
+    <h2>Project And Other Things</h2>
+    <p>Soon :O</p>
+    <h2>Mood?</h2>
+    <p>Pretty Gud</p>
+  </div>
+</div>
+
+
+<div style="background-color:#595959;text-align:center;padding:10px;margin-top:7px;font-size:12px;color:#ffffbd"> This web page is a part of a demonstration of fluid web design made by w3schools.com. Resize the browser window to see the content respond to the resizing.</div>
+
 </body>
 </html>
+
